@@ -18,7 +18,8 @@ RUN apt-get update && \
       libsqlite3-dev \
       libssl-dev \
       libxml2-dev \
-      libzmq3-dev && \
+      libzmq3-dev \
+      xxhash && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
