@@ -12,6 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y build-essential \
       libcurl4-openssl-dev \
+      libgcrypt-dev \
       libmicrohttpd-dev \
       libpcap-dev \
       libsqlite3-dev \
