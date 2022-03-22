@@ -1,0 +1,43 @@
+# ------------------------------------------------------------------------------
+# Pull base image
+FROM ubuntu:focal
+MAINTAINER Brett Kuskie <fullaxx@gmail.com>
+
+# ------------------------------------------------------------------------------
+# Set environment variables
+ENV DEBIAN_FRONTEND noninteractive
+
+# ------------------------------------------------------------------------------
+# Create a docker image suitable for development
+RUN apt-get update && \
+    apt-get install -y \
+      bash-completion \
+      build-essential \
+      cgdb \
+      cmake \
+      file \
+      less \
+      libcurl4-gnutls-dev \
+      libgcrypt-dev \
+      libmicrohttpd-dev \
+      libpcap-dev \
+      libsqlite3-dev \
+      libssl-dev \
+      libwebsockets-dev \
+      libxml2-dev \
+      libzmq3-dev \
+      lsof \
+      meson \
+      nano \
+      sshfs \
+      tcpdump \
+      tree \
+      vim-tiny \
+      xxd \
+      xxhash  && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
+
+# ------------------------------------------------------------------------------
+# Define default entrypoint
+CMD ["/bin/bash"]
