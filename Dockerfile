@@ -11,12 +11,13 @@ ENV DEBIAN_FRONTEND noninteractive
 # Create a docker image suitable for development
 RUN apt-get update && \
     apt-get install -y build-essential \
-      libcurl4-openssl-dev \
+      libcurl4-gnutls-dev \
       libgcrypt-dev \
       libmicrohttpd-dev \
       libpcap-dev \
       libsqlite3-dev \
       libssl-dev \
+      libwebsockets-dev \
       libxml2-dev \
       libzmq3-dev \
       xxhash && \
