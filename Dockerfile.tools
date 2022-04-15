@@ -19,6 +19,7 @@ RUN apt-get update && \
       less \
       libcurl4-gnutls-dev \
       libgcrypt-dev \
+      libhiredis-dev \
       libmicrohttpd-dev \
       libpcap-dev \
       libsqlite3-dev \
