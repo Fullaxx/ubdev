@@ -10,7 +10,8 @@ ENV DEBIAN_FRONTEND noninteractive
 # ------------------------------------------------------------------------------
 # Create a docker image suitable for development
 RUN apt-get update && \
-    apt-get install -y build-essential \
+    apt-get install -y --no-install-recommends \
+      build-essential git \
       libcurl4-gnutls-dev \
       libevent-dev \
       libgcrypt-dev \
@@ -22,6 +23,8 @@ RUN apt-get update && \
       libwebsockets-dev \
       libxml2-dev \
       libzmq3-dev \
+      nano \
+      vim-tiny \
       xxhash && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
