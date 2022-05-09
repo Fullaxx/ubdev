@@ -24,8 +24,10 @@ RUN apt-get update && \
       libxml2-dev \
       libzmq3-dev \
       nano \
+      unzip \
       vim-tiny \
-      xxhash && \
+      xxhash \
+      zip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
