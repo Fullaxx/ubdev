@@ -17,6 +17,7 @@ RUN apt-get update && \
       libgcrypt-dev \
       libhiredis-dev \
       libmicrohttpd-dev \
+      libnet1-dev \
       libpcap-dev \
       libsqlite3-dev \
       libssl-dev \
