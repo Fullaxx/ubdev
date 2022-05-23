@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # Pull base image
-FROM ubuntu:focal
+FROM fullaxx/ubdev
 MAINTAINER Brett Kuskie <fullaxx@gmail.com>
 
 # ------------------------------------------------------------------------------
@@ -12,31 +12,19 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y \
       bash-completion \
-      build-essential \
       cgdb \
       cmake \
       file \
       less \
-      libcurl4-gnutls-dev \
-      libevent-dev \
-      libgcrypt-dev \
-      libhiredis-dev \
-      libmicrohttpd-dev \
-      libpcap-dev \
-      libsqlite3-dev \
-      libssl-dev \
-      libwebsockets-dev \
-      libxml2-dev \
-      libzmq3-dev \
+      libnet1-dbg \
+      libpcap0.8-dbg \
       lsof \
       meson \
-      nano \
+      openssh-client \
       sshfs \
       tcpdump \
       tree \
-      vim-tiny \
-      xxd \
-      xxhash  && \
+      xxd && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
