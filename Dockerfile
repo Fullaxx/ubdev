@@ -6,7 +6,7 @@ MAINTAINER Brett Kuskie <fullaxx@gmail.com>
 # ------------------------------------------------------------------------------
 # Set environment variables
 ENV DEBIAN_FRONTEND noninteractive
-ENV QLIBCVERS "2.4.6"
+ENV QLIBCVERS "2.4.8"
 ENV QLIBCURL "https://github.com/wolkykim/qlibc/archive/refs/tags/v${QLIBCVERS}.tar.gz"
 
 # ------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 # ------------------------------------------------------------------------------
-# Install qlibc 2.4.6
+# Install qlibc
 RUN cd /tmp && \
     curl -L ${QLIBCURL} -o qlibc-${QLIBCVERS}.tar.gz && \
     tar xf qlibc-${QLIBCVERS}.tar.gz && cd qlibc-${QLIBCVERS} && \
