@@ -18,7 +18,7 @@ RUN apt-get update && \
       curl \
       doxygen \
       git \
-      libcurl4-gnutls-dev \
+      libcurl4-openssl-dev \
       libevent-dev \
       libgcrypt-dev \
       libhiredis-dev \
