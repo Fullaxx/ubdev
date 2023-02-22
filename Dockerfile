@@ -31,6 +31,8 @@ RUN apt-get update && \
       libxml2-dev \
       libzmq3-dev \
       nano \
+      sqlite3 \
+      supervisor \
       unzip \
       vim-tiny \
       xxhash \
