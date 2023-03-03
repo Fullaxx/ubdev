@@ -30,7 +30,13 @@ RUN apt-get update && \
       libwebsockets-dev \
       libxml2-dev \
       libzmq3-dev \
+      lbzip2 \
+      lrzip \
       nano \
+      pbzip2 \
+      pigz \
+      pixz \
+      plzip \
       sqlite3 \
       supervisor \
       unzip \
