@@ -49,6 +49,8 @@ RUN apt-get update && \
       pixz \
       plzip \
       pv \
+      rsync \
+      run-one \
       silversearcher-ag \
       sqlite3 \
       supervisor \
