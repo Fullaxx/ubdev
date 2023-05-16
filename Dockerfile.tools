@@ -20,6 +20,7 @@ RUN apt-get update && \
       libnet1-dbg \
       lsof \
       meson \
+      net-tools \
       openssh-client \
       sshfs \
       tcpdump \
