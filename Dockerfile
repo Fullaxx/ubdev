@@ -18,7 +18,10 @@ RUN apt-get update && \
       curl \
       doxygen \
       git \
+      iproute2 \
+      iputils-ping \
       jq \
+      less \
       libcurl4-openssl-dev \
       libevent-dev \
       libgcrypt-dev \
@@ -33,7 +36,9 @@ RUN apt-get update && \
       libzmq3-dev \
       lbzip2 \
       lrzip \
+      lsof \
       nano \
+      net-tools \
       pbzip2 \
       pigz \
       pixz \
