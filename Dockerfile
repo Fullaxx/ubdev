@@ -17,6 +17,7 @@ RUN apt-get update && \
       ca-certificates \
       curl \
       doxygen \
+      dtach \
       git \
       hping3 \
       iproute2 \
