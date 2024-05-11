@@ -18,6 +18,7 @@ RUN apt-get update && \
       curl \
       doxygen \
       git \
+      hping3 \
       iproute2 \
       iputils-ping \
       jq \
