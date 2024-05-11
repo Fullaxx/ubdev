@@ -47,10 +47,12 @@ RUN apt-get update && \
       pv \
       rsync \
       run-one \
+      screen \
       silversearcher-ag \
       sqlite3 \
       supervisor \
       tcpdump \
+      tmux \
       unzip \
       vim-tiny \
       xxhash \
