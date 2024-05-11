@@ -50,6 +50,7 @@ RUN apt-get update && \
       silversearcher-ag \
       sqlite3 \
       supervisor \
+      tcpdump \
       unzip \
       vim-tiny \
       xxhash \
