@@ -13,6 +13,7 @@ ENV QLIBCURL "https://github.com/wolkykim/qlibc/archive/refs/tags/v${QLIBCVERS}.
 # Create a docker image suitable for development
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+      apcalc \
       build-essential \
       ca-certificates \
       curl \
