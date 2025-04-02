@@ -25,6 +25,7 @@ RUN apt-get update && \
       iputils-ping \
       jq \
       less \
+      libboost-all-dev \
       libcurl4-openssl-dev \
       libevent-dev \
       libgcrypt-dev \
