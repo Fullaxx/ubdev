@@ -5,7 +5,7 @@ MAINTAINER Brett Kuskie <fullaxx@gmail.com>
 
 # ------------------------------------------------------------------------------
 # Set environment variables
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # libpcap0.8-dbg is not available in jammy
 # ------------------------------------------------------------------------------
