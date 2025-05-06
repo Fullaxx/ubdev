@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
 # Pull base image
 FROM ubuntu:jammy
-MAINTAINER Brett Kuskie <fullaxx@gmail.com>
+LABEL author="Brett Kuskie <fullaxx@gmail.com>"
 
 # ------------------------------------------------------------------------------
 # Set environment variables
