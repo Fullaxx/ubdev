@@ -11,14 +11,20 @@ ENV QLIBCURL="https://github.com/wolkykim/qlibc/archive/refs/tags/v${QLIBCVERS}.
 
 # ------------------------------------------------------------------------------
 # Create a docker image suitable for development
+# libpcap0.8-dbg is not available in jammy
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       apcalc \
+      bash-completion \
       build-essential \
       ca-certificates \
+      cgdb \
+      cmake \
       curl \
       doxygen \
       dtach \
+      file \
+      gdb \
       git \
       hping3 \
       iproute2 \
@@ -30,7 +36,7 @@ RUN apt-get update && \
       libgcrypt-dev \
       libhiredis-dev \
       libmicrohttpd-dev \
-      libnet1-dev \
+      libnet1-dev libnet1-dbg \
       libpcap-dev \
       libsqlite3-dev \
       libssl-dev \
@@ -40,8 +46,10 @@ RUN apt-get update && \
       lbzip2 \
       lrzip \
       lsof \
+      meson \
       nano \
       net-tools \
+      openssh-client \
       pbzip2 \
       pigz \
       pixz \
@@ -52,12 +60,15 @@ RUN apt-get update && \
       screen \
       silversearcher-ag \
       sqlite3 \
+      sshfs \
       supervisor \
       tcpdump \
       tmux \
+      tree \
       tshark \
       unzip \
       vim-tiny \
+      xxd \
       xxhash \
       zip \
       zlib1g-dev && \

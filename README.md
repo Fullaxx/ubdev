@@ -8,5 +8,4 @@ A development image based on Ubuntu
 ```
 docker pull fullaxx/ubdev
 docker build -f Dockerfile       -t="fullaxx/ubdev"  github.com/Fullaxx/ubdev
-docker build -f Dockerfile.tools -t="fullaxx/ubdevx" github.com/Fullaxx/ubdev
 ```
