@@ -68,7 +68,18 @@ RUN apt-get update && \
 # Install python modules and clean up
 RUN apt-get update && \
     apt-get install -y --no-install-recommends python3-pip && \
-    python3 -m pip install ipython redis[hiredis] pandas==2.1.4 pyzmq xxhash && \
+    python3 -m pip install \
+      ipython \
+      grip \
+      pandas==2.1.4 \
+      pudb \
+      pyzmq \
+      redis[hiredis] \
+      rel \
+      scapy \
+      websocket-client \
+      wsaccel \
+      xxhash && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 # ------------------------------------------------------------------------------
