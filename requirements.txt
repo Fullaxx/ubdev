@@ -1,0 +1,41 @@
+# Official Alpaca API
+alpaca-py
+
+ipython
+
+grip
+
+# Pandas 2.2.0 has a memory leak
+# This should have been fixed in pandas 2.2.3
+#pandas==2.1.4
+pandas
+
+# Technical Analysis library for generating signals/indicators
+# https://github.com/twopirllc/ - WTF HAPPENED HERE?!?1
+#pandas_ta
+# https://github.com/xgboosted/pandas-ta-classic
+pandas_ta_classic
+
+pudb
+
+# Python bindings for ZMQ
+pyzmq
+
+# Python bindings for Redis
+redis[hiredis]
+
+scapy
+
+# Trend Lines using Linear Regression Statistics
+scipy
+
+# Streamlit and Plotly
+streamlit
+plotly
+
+# Websocket library (Should look into alpacas Stream class)
+rel
+websocket-client
+wsaccel
+
+xxhash

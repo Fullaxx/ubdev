@@ -10,6 +10,10 @@ ENV QLIBCVERS="2.5.0"
 ENV QLIBCURL="https://github.com/wolkykim/qlibc/archive/refs/tags/v${QLIBCVERS}.tar.gz"
 
 # ------------------------------------------------------------------------------
+# Prepare Python requirements.txt
+COPY requirements.txt /install/requirements.txt
+
+# ------------------------------------------------------------------------------
 # Create a docker image suitable for development
 # libpcap0.8-dbg is not available in jammy
 RUN apt-get update && \
@@ -33,7 +37,7 @@ RUN apt-get update && \
       less \
       libcurl4-openssl-dev \
       libevent-dev \
-      libgcrypt-dev \
+      libgcrypt20-dev \
       libhiredis-dev \
       libmicrohttpd-dev \
       libnet1-dev libnet1-dbg \
@@ -55,6 +59,7 @@ RUN apt-get update && \
       pixz \
       plzip \
       pv \
+      python3-pip \
       rsync \
       run-one \
       screen \
@@ -72,26 +77,9 @@ RUN apt-get update && \
       xxhash \
       zip \
       zlib1g-dev && \
+    pip3 install -r /install/requirements.txt && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
-
-# ------------------------------------------------------------------------------
-# Install python modules and clean up
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends python3-pip && \
-    python3 -m pip install \
-      ipython \
-      grip \
-      pandas==2.1.4 \
-      pudb \
-      pyzmq \
-      redis[hiredis] \
-      rel \
-      scapy \
-      websocket-client \
-      wsaccel \
-      xxhash && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 # ------------------------------------------------------------------------------
 # Install qlibc
