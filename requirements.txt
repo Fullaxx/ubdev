@@ -3,7 +3,13 @@ alpaca-py
 
 ipython
 
+gdbfrontend
+
 grip
+
+ipython
+
+matplotlib
 
 # Pandas 2.2.0 has a memory leak
 # This should have been fixed in pandas 2.2.3
@@ -15,8 +21,15 @@ pandas
 #pandas_ta
 # https://github.com/xgboosted/pandas-ta-classic
 pandas_ta_classic
+TA-Lib
+
+plotly
 
 pudb
+
+pygments
+
+# pyqtgraph
 
 # Python bindings for ZMQ
 pyzmq
@@ -29,9 +42,9 @@ scapy
 # Trend Lines using Linear Regression Statistics
 scipy
 
-# Streamlit and Plotly
+# seaborn
+
 streamlit
-plotly
 
 # Websocket library (Should look into alpacas Stream class)
 rel
@@ -39,3 +52,5 @@ websocket-client
 wsaccel
 
 xxhash
+
+yfinance
