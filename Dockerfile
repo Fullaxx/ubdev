@@ -55,6 +55,7 @@ RUN apt-get update && \
       net-tools \
       openssh-client \
       pbzip2 \
+      pcaputils \
       pigz \
       pixz \
       plzip \
