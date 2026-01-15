@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # Pull base image
-FROM ubuntu:jammy
+FROM ubuntu:noble
 LABEL author="Brett Kuskie <fullaxx@gmail.com>"
 
 # ------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ COPY requirements.txt /install/requirements.txt
 # libpcap0.8-dbg is not available in jammy
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-      apcalc \
+      calc \
       bash-completion \
       build-essential \
       ca-certificates \
@@ -77,6 +77,7 @@ RUN apt-get update && \
       xxhash \
       zip \
       zlib1g-dev && \
+    rm /usr/lib/python3*/EXTERNALLY-MANAGED && \
     pip3 install -r /install/requirements.txt && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*

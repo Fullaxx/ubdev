@@ -1,10 +1,13 @@
 # Official Alpaca API
 alpaca-py
 
-ipython
+# URL-safe Ascii85/Base85 data encoding
+b64fx
+
+# Password Hashing
+bcrypt
 
 gdbfrontend
-
 grip
 
 ipython
@@ -14,7 +17,8 @@ matplotlib
 # Pandas 2.2.0 has a memory leak
 # This should have been fixed in pandas 2.2.3
 #pandas==2.1.4
-pandas
+pandas==2.3.3
+#pandas
 
 # Technical Analysis library for generating signals/indicators
 # https://github.com/twopirllc/ - WTF HAPPENED HERE?!?1
@@ -24,9 +28,7 @@ pandas_ta_classic
 TA-Lib
 
 plotly
-
 pudb
-
 pygments
 
 # pyqtgraph
@@ -45,6 +47,7 @@ scipy
 # seaborn
 
 streamlit
+streamlit-aggrid
 
 # Websocket library (Should look into alpacas Stream class)
 rel
