@@ -15,6 +15,8 @@ ipython
 
 matplotlib
 
+msgspec
+
 # Pandas 2.2.0 has a memory leak
 # This should have been fixed in pandas 2.2.3
 #pandas==2.1.4
@@ -28,6 +30,8 @@ pandas==2.3.3
 pandas_ta_classic
 TA-Lib
 
+orjson
+
 plotly
 
 polars
@@ -39,6 +43,8 @@ pybase64
 pygments
 
 # pyqtgraph
+
+pysimdjson
 
 # Python bindings for ZMQ
 pyzmq
