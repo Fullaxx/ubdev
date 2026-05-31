@@ -77,7 +77,8 @@ RUN apt-get update && \
       xxd \
       xxhash \
       zip \
-      zlib1g-dev && \
+      zlib1g-dev \
+      zstd libzstd-dev && \
     rm /usr/lib/python3*/EXTERNALLY-MANAGED && \
     pip3 install -r /install/requirements.txt && \
     apt-get clean && \
