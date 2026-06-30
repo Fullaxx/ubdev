@@ -6,7 +6,7 @@ LABEL author="Brett Kuskie <fullaxx@gmail.com>"
 # ------------------------------------------------------------------------------
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
-ENV QLIBCVERS="2.5.0"
+ENV QLIBCVERS="2.5.1"
 ENV QLIBCURL="https://github.com/wolkykim/qlibc/archive/refs/tags/v${QLIBCVERS}.tar.gz"
 
 # ------------------------------------------------------------------------------
